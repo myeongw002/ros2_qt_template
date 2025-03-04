@@ -31,7 +31,7 @@ add_executable(${PROJECT_NAME}
 )
 
 # MOC 파일 자동 생성
-set(MOC_HEADERS include/qt_gui_test/mainwindow.h)
+set(MOC_HEADERS include/${PROJECT_NAME}/mainwindow.h)
 qt5_wrap_cpp(MOC_SRCS ${MOC_HEADERS})
 
 # include/ 디렉토리 추가 (헤더 파일을 찾기 위해 필요)
